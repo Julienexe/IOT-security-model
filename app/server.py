@@ -9,7 +9,7 @@ class_names = np.array(['MQTT_Publish', 'Thing_Speak', 'Wipro_bulb', 'ARP_poisio
        'NMAP_FIN_SCAN', 'NMAP_OS_DETECTION', 'NMAP_TCP_scan',
        'NMAP_UDP_SCAN', 'NMAP_XMAS_TREE_SCAN'])
 
-app = FastApI()
+app = FastAPI()
 
 @app.get('/')
 def reed_root():
