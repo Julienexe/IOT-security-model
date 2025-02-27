@@ -2,7 +2,7 @@ from fastapi import FastApI
 import pickle
 import numpy as np  
 
-model = pickle.load(open('enhanced_student_ssl_dqn_model.pkl', 'rb'))
+model = pickle.load(open('app/enhanced_student_ssl_dqn_model.pkl', 'rb'))
 
 class_names = np.array(['MQTT_Publish', 'Thing_Speak', 'Wipro_bulb', 'ARP_poisioning',
        'DDOS_Slowloris', 'DOS_SYN_Hping', 'Metasploit_Brute_Force_SSH',
