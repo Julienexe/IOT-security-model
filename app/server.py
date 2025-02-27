@@ -1,4 +1,4 @@
-from fastapi import FastApI
+from fastapi import FastAPI
 import pickle
 import numpy as np  
 
