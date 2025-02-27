@@ -1,0 +1,13 @@
+{% if search_results %}
+<div class="suggestions">
+    <p>Suggested traffic patterns:</p>
+    {% for result in search_results %}
+    <div class="suggestion" 
+         onclick="fillForm('{{ result.features }}')"
+         title="{{ result.description }}">
+        <strong>{{ result.name }}</strong>: {{ result.features }}
+        <div style="font-size: 0.8em; color: #666;">{{ result.description }}</div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}

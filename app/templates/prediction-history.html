@@ -1,0 +1,5 @@
+{% for prediction in predictions %}
+<li class="prediction-item {% if 'Normal' in prediction %}normal{% else %}attack{% endif %}">
+    {{ prediction }}
+</li>
+{% endfor %}
