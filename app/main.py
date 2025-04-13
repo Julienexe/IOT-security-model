@@ -23,7 +23,8 @@ app.mount("/static", StaticFiles(directory=str(Path(BASE_DIR, 'static'))), name=
 
 
 
-model = torch.jit.load("app/enhanced_student_ssl_dqn_model.pt")
+model_path = Path(BASE_DIR, 'enhanced_student_ssl_dqn_model.pt')
+model = torch.jit.load(model_path)
 model.eval()
 
 # Store prediction history
